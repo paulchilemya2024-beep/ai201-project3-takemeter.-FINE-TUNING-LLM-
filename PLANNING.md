@@ -10,89 +10,79 @@ The model should predict one label from:
 
 ---
 
-## Community and Why These Labels Matter
-The target community is people who follow AI, startup, and developer discourse on Tech Twitter/X: builders, analysts, and curious readers who want to separate hype from real insight. These labels matter because the same topic can be discussed in very different ways, and readers need a quick way to tell whether a post is mostly noise, partially useful, or genuinely valuable.
+## Community
+I chose the AI/startup/developer discourse community on Tech Twitter/X because it produces a wide range of writing styles, from pure hype to genuinely useful analysis. That variety is ideal for a classification task because the same topic can be discussed with very different levels of reasoning, evidence, and specificity.
+
+This community is a good fit because people are constantly sharing opinions about tools, workflows, markets, products, and technical tradeoffs, which gives the dataset enough diversity to make the labels meaningful.
 
 ---
 
-## Label Definitions and Boundary Tests
+## Labels
+I will use three labels so the boundary between them stays clear and practical:
 
 ### `low_quality_take`
-Definition: A low-quality take is mostly hype, bait, or vague opinion with little evidence, reasoning, or specific detail.
-
-Clear examples:
-1. “If you’re not using AI for everything right now you’re already obsolete 😂”
-2. “This new model is going to change the world forever, trust me.”
-
-Borderline / uncertain example:
-3. “AI is making software development much easier now, and everyone should be using it.”
-
-Why this boundary matters: this post has some real-world flavor, but it still lacks enough evidence or specificity to move above low quality.
-
----
+A low-quality take is a post that is mostly hype, bait, or unsupported opinion with little reasoning or evidence.
+- Example post 1: “If you’re not using AI for everything right now you’re already obsolete 😂”
+- Example post 2: “This model is going to change the world forever, trust me.”
 
 ### `medium_quality_take`
-Definition: A medium-quality take shows some insight or context, but the reasoning is incomplete, partially grounded, or still too general.
-
-Clear examples:
-1. “Most devs overestimate how much AI will replace them and underestimate how much it will change their workflow.”
-2. “Open-source models are improving fast, but the biggest bottleneck is still getting teams to use them well.”
-
-Borderline / uncertain example:
-3. “AI is useful for coding, but it still needs human review and good product thinking.”
-
-Why this boundary matters: this is stronger than low quality because it has a real claim, but it is still not specific enough to be high quality.
-
----
+A medium-quality take is a post that shows some real insight or context, but still leaves important reasoning incomplete or too general.
+- Example post 1: “Most devs overestimate how much AI will replace them and underestimate how much it will change their workflow.”
+- Example post 2: “Open-source models are improving fast, but the biggest bottleneck is still getting teams to use them well.”
 
 ### `high_quality_take`
-Definition: A high-quality take is specific, grounded, and clearly useful because it gives a strong argument, evidence, tradeoff, or concrete example.
-
-Clear examples:
-1. “Most ‘AI will replace devs’ takes ignore that 80% of enterprise code is glue work between legacy systems, where context and ownership matter more than raw coding speed.”
-2. “The biggest moat in AI is not the model itself; it is the feedback loop, data pipeline, and trust layer that make the product usable every day.”
-
-Borderline / uncertain example:
-3. “AI tools are becoming more reliable, but the best teams still need good evaluation and careful deployment.”
-
-Why this boundary matters: this post is thoughtful, but it still needs enough concrete detail to clearly deserve the high-quality label.
+A high-quality take is a post that gives a specific, grounded, and useful argument with evidence, examples, tradeoffs, or clear logic.
+- Example post 1: “Most ‘AI will replace devs’ takes ignore that 80% of enterprise code is glue work between legacy systems, where context and ownership matter more than raw coding speed.”
+- Example post 2: “The biggest moat in AI is not the model itself; it is the feedback loop, data pipeline, and trust layer that make the product usable every day.”
 
 ---
 
-## Mutual Exclusivity Check
-These labels are designed to be mutually exclusive by asking one question first: how much specific reasoning does the post actually provide?
+## Hard Edge Cases
+The hardest ambiguous posts are ones that sound thoughtful but do not really provide enough specific reasoning to justify a high-quality label. For example, a post might mention evaluation, trust, or workflow without offering concrete detail, evidence, or a clear argument.
 
-- If the post is mostly hype or unsupported opinion, label it `low_quality_take`.
-- If it has some real insight but is still broad or incomplete, label it `medium_quality_take`.
-- If it gives a clear argument, concrete detail, or strong evidence, label it `high_quality_take`.
-
-The main overlap to watch for is posts that sound smart but do not actually say much. Those should usually stay in `medium_quality_take` unless they clearly provide strong reasoning, evidence, or examples.
+When I encounter a borderline post during annotation, I will use this rule: if the post is mostly hype or unsupported opinion, it is `low_quality_take`; if it has some insight but still lacks detail, it is `medium_quality_take`; if it provides a clear argument with specifics or evidence, it is `high_quality_take`.
 
 ---
 
-## Data Preparation Rules
-1. Keep the raw post text exactly as written.
-2. Judge the argument quality, not the topic or the popularity of the post.
-3. Use exactly one label per example.
-4. Prefer consistency over trying to reward every clever phrase.
-5. When unsure, use the boundary rules above and choose the label that best fits the reasoning quality.
+## Data Collection Plan
+I will collect examples from Tech Twitter/X posts, especially AI, startup, and developer threads, using a mix of manual selection and search-based collection. I will aim for roughly 60–80 examples per label by the time I finish the first annotation pass, and I will expand the dataset until I have at least 200 labeled examples total.
+
+If one label is underrepresented after 200 examples, I will intentionally collect more posts that match that label and add a few boundary cases so the model can learn the difference more reliably.
 
 ---
 
-## Suggested Dataset Format
-Each example should follow this pattern:
+## Evaluation Metrics
+Accuracy alone is not enough because the labels are not equally easy to distinguish and some mistakes matter more than others. I will use:
+- accuracy, to measure overall correctness
+- per-label precision and recall, to see whether the model is missing or over-predicting specific classes
+- F1 score, especially because it balances false positives and false negatives for a multi-class problem
 
-```json
-{
-  "text": "post text goes here",
-  "label": "high_quality_take"
-}
-```
+These metrics are appropriate because the task is not just about getting the overall answer right; it is about making sure the model can reliably separate hype, partial insight, and strong reasoning.
 
-The dataset should include a balanced mix of:
-- clearly low-quality hype posts
-- partially insightful posts
-- genuinely strong, grounded posts
+---
+
+## Definition of Success
+A classifier would be genuinely useful if it can correctly separate clearly low-quality posts from clearly high-quality posts most of the time and can handle borderline cases consistently enough that a human reviewer only needs to correct a small number of examples.
+
+For a real community tool, I would consider the model good enough if it reaches strong macro-F1 performance and if its mistakes are concentrated in genuinely ambiguous cases rather than in obvious examples.
+
+---
+
+## Review of Success Criteria
+These criteria are specific enough to judge objectively because they define what matters: overall correctness, per-label performance, and whether the remaining mistakes are concentrated in ambiguous cases. At the end of the project, I can measure those numbers directly and decide whether the classifier is useful for real annotation support.
+
+---
+
+## AI Tool Plan
+
+### Label stress-testing
+I will ask an AI tool to generate 5–10 posts that sit exactly at the boundary between two labels using the definitions above. If the AI creates posts that I still cannot classify cleanly, I will revise the label definitions before annotating a large batch.
+
+### Annotation assistance
+I may use an LLM to pre-label a small batch of examples before I review them myself. If I do this, I will track which examples were pre-labeled so I can disclose that in the final AI usage section.
+
+### Failure analysis
+After evaluating the model, I will give the wrong predictions to an AI tool and ask it to identify repeated patterns, such as confusion between medium and high quality posts or overreliance on buzzwords. I will then verify those patterns manually before writing the evaluation conclusions.
 
 ---
 
@@ -100,7 +90,7 @@ The dataset should include a balanced mix of:
 1. Clean the dataset and remove malformed entries.
 2. Split the data into training, validation, and test sets.
 3. Fine-tune a text classifier on the labeled examples.
-4. Track accuracy and per-label performance.
+4. Track accuracy, precision, recall, and F1 by label.
 5. Review mistakes to see whether the model is confusing hype with weak-but-useful arguments.
 
 ---
