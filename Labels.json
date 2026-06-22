@@ -646,5 +646,157 @@
     {
         "text": "Tech Twitter thread #21: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
         "label": "medium_quality_take"
+    },
+    {
+        "text": "The most useful AI products are the ones that make boring work disappear without needing a tutorial.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "I still think the real challenge in AI is not intelligence, it's making outputs reliable enough for real teams.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The best startup ideas in AI are usually just better user experiences around familiar problems.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "If a company keeps calling everything AI, it probably means they haven't built anything durable yet.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "What people call innovation in AI often just means someone found a faster way to automate a bad process.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "A product that can explain its limitations is more trustworthy than one that sounds perfect all the time.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "AI is going to replace all manual work and every human job in the next few years.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The difference between hype and signal is usually whether the post gives a real mechanism, not just a catchy phrase.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "A lot of AI writing sounds insightful until you ask what evidence it actually gives you.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The reason people get excited about AI is that it finally makes tedious work visible enough to fix.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "I would rather use a mediocre tool that is dependable than a flashy one that hallucinate every day.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Chatbots are everywhere now, but most of them still don't understand the context of a real business problem.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "If the AI product cannot be used without a huge amount of setup, it is not solving the core problem.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "This AI tool will save everyone time and money with zero effort required.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "Many AI discussions are too focused on the model and not focused enough on the user experience.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "A strong AI system should be able to say when it is uncertain, not just sound confident.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The word disruption is now used so often that it no longer means anything useful.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The most overlooked part of AI products is how well they integrate into existing workflows.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "People often think AI is about replacing thinking, but the real impact is on how quickly work gets done.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "If the output quality depends on the exact wording of one perfect prompt, the product is probably too fragile.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "This is going to be the next big thing in AI and everyone should be paying attention right now.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The most valuable AI feature is often not generation, but structure, review, and follow-through.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "A lot of teams are excited about AI because they finally have a tool that can make their messy process visible.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Most AI demos are not proving the product is good; they are proving the model can perform once under ideal conditions.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "If your AI system needs constant babysitting, it is not really automation yet.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "I think AI products will be judged less by novelty and more by whether they save time every week.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "A good AI workflow is usually a boring workflow with better defaults and fewer retries.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The hottest AI startups are often the ones that understand operational detail better than everyone else.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Everyone wants a magic AI assistant, but most people still need a clear process to get results.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "If the so-called AI breakthrough cannot handle edge cases, it is not ready for serious use.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The AI hype cycle is so strong that even obvious automation now gets called revolutionary.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "A strong product team can do more with a modest model than a weak team can do with a perfect one.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Most people talk about AI like it is a single thing, but the reality is a stack of tools, data, and human judgment.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The fastest way to tell if an AI post is shallow is to look for claims that never explain how they were reached.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "This AI system is amazing because it can answer almost any question with confidence.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The main risk in AI is not that it fails once, but that it fails in a way that looks convincing.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The most practical AI ideas are the ones that solve a real pain point without asking users to change everything.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The most useful AI products are the ones that make boring work disappear without needing a tutorial.",
+        "label": "high_quality_take"
     }
 ]
