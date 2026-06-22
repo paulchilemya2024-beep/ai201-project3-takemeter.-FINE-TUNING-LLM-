@@ -1,71 +1,86 @@
 # Fine-Tuning Plan for Tech Twitter Quality Classification
 
 ## Project Goal
-Build a classifier that reads short tech/social posts and predicts whether the post is:
+This project is about classifying short tech/social posts by the quality of their reasoning, not by the topic they mention.
+
+The model should predict one label from:
 - `low_quality_take`
 - `medium_quality_take`
 - `high_quality_take`
 
-The goal is to judge the quality of the argument and reasoning, not the topic itself.
+---
+
+## Community and Why These Labels Matter
+The target community is people who follow AI, startup, and developer discourse on Tech Twitter/X: builders, analysts, and curious readers who want to separate hype from real insight. These labels matter because the same topic can be discussed in very different ways, and readers need a quick way to tell whether a post is mostly noise, partially useful, or genuinely valuable.
 
 ---
 
-## Label Definitions
+## Label Definitions and Boundary Tests
 
 ### `low_quality_take`
-Use this when the post is mostly hype, bait, vague claims, or shallow opinion with little evidence.
+Definition: A low-quality take is mostly hype, bait, or vague opinion with little evidence, reasoning, or specific detail.
 
-Signals:
-- No clear reasoning or evidence
-- Heavy engagement bait or clickbait
-- Very broad statements like “AI will replace everything”
-- Claims that sound confident but are unsupported
+Clear examples:
+1. “If you’re not using AI for everything right now you’re already obsolete 😂”
+2. “This new model is going to change the world forever, trust me.”
 
-Example:
-> “If you’re not using AI for everything right now you’re already obsolete 😂”
+Borderline / uncertain example:
+3. “AI is making software development much easier now, and everyone should be using it.”
+
+Why this boundary matters: this post has some real-world flavor, but it still lacks enough evidence or specificity to move above low quality.
 
 ---
 
 ### `medium_quality_take`
-Use this when the post shows some reasoning, context, or insight, but still lacks depth or precision.
+Definition: A medium-quality take shows some insight or context, but the reasoning is incomplete, partially grounded, or still too general.
 
-Signals:
-- Some useful perspective or observation
-- A mix of good thinking and weak claims
-- Reasonable but not fully grounded
-- The post is interesting, but not especially rigorous
+Clear examples:
+1. “Most devs overestimate how much AI will replace them and underestimate how much it will change their workflow.”
+2. “Open-source models are improving fast, but the biggest bottleneck is still getting teams to use them well.”
 
-Example:
-> “Most devs overestimate how much AI will replace them and underestimate how much it will change their workflow.”
+Borderline / uncertain example:
+3. “AI is useful for coding, but it still needs human review and good product thinking.”
+
+Why this boundary matters: this is stronger than low quality because it has a real claim, but it is still not specific enough to be high quality.
 
 ---
 
 ### `high_quality_take`
-Use this when the post is specific, grounded, and clearly insightful.
+Definition: A high-quality take is specific, grounded, and clearly useful because it gives a strong argument, evidence, tradeoff, or concrete example.
 
-Signals:
-- Strong reasoning or evidence
-- Specific examples, numbers, tradeoffs, or clear logic
-- Helpful framing that teaches or clarifies something real
-- A take that a thoughtful tech audience would save or quote
+Clear examples:
+1. “Most ‘AI will replace devs’ takes ignore that 80% of enterprise code is glue work between legacy systems, where context and ownership matter more than raw coding speed.”
+2. “The biggest moat in AI is not the model itself; it is the feedback loop, data pipeline, and trust layer that make the product usable every day.”
 
-Example:
-> “Most ‘AI will replace devs’ takes ignore that 80% of enterprise code is glue work between legacy systems, where context and ownership matter more than raw coding speed.”
+Borderline / uncertain example:
+3. “AI tools are becoming more reliable, but the best teams still need good evaluation and careful deployment.”
+
+Why this boundary matters: this post is thoughtful, but it still needs enough concrete detail to clearly deserve the high-quality label.
+
+---
+
+## Mutual Exclusivity Check
+These labels are designed to be mutually exclusive by asking one question first: how much specific reasoning does the post actually provide?
+
+- If the post is mostly hype or unsupported opinion, label it `low_quality_take`.
+- If it has some real insight but is still broad or incomplete, label it `medium_quality_take`.
+- If it gives a clear argument, concrete detail, or strong evidence, label it `high_quality_take`.
+
+The main overlap to watch for is posts that sound smart but do not actually say much. Those should usually stay in `medium_quality_take` unless they clearly provide strong reasoning, evidence, or examples.
 
 ---
 
 ## Data Preparation Rules
-
-1. Keep the raw post text in the dataset exactly as written.
-2. Do not label based on whether the post is popular or viral.
-3. Judge the quality of the argument, not the brand, company, or hype level.
-4. Use the same label format every time.
-5. If a post is unclear, choose the label that best matches the reasoning quality.
+1. Keep the raw post text exactly as written.
+2. Judge the argument quality, not the topic or the popularity of the post.
+3. Use exactly one label per example.
+4. Prefer consistency over trying to reward every clever phrase.
+5. When unsure, use the boundary rules above and choose the label that best fits the reasoning quality.
 
 ---
 
 ## Suggested Dataset Format
-Each example should look like:
+Each example should follow this pattern:
 
 ```json
 {
@@ -74,47 +89,25 @@ Each example should look like:
 }
 ```
 
-The training data should include a good mix of:
-- strong, evidence-based posts
-- medium posts with partial insight
-- low posts that are hype-heavy or shallow
+The dataset should include a balanced mix of:
+- clearly low-quality hype posts
+- partially insightful posts
+- genuinely strong, grounded posts
 
 ---
 
 ## Fine-Tuning Workflow
-
-1. Build and clean the dataset
-   - Remove empty or malformed entries
-   - Make sure each text has a valid label
-
-2. Split the data
-   - Keep a training set for fine-tuning
-   - Keep a validation set for checking performance
-   - Optionally hold out a test set for final evaluation
-
-3. Choose a model
-   - Start with a lightweight transformer that can handle text classification well
-   - Compare performance against a prompt-only baseline
-
-4. Fine-tune
-   - Train on the labeled examples
-   - Track loss and validation accuracy
-   - Watch for overfitting if the dataset is too small
-
-5. Evaluate
-   - Measure accuracy overall
-   - Check per-label performance
-   - Review mistakes to see whether the model is confusing hype with medium quality posts
+1. Clean the dataset and remove malformed entries.
+2. Split the data into training, validation, and test sets.
+3. Fine-tune a text classifier on the labeled examples.
+4. Track accuracy and per-label performance.
+5. Review mistakes to see whether the model is confusing hype with weak-but-useful arguments.
 
 ---
 
 ## Success Criteria
-A successful model should:
-- correctly separate shallow hype from thoughtful takes
-- be consistent when posts use similar wording but differ in reasoning quality
-- avoid overreacting to buzzwords alone
+A good model should:
+- separate shallow hype from thoughtful analysis
+- remain consistent on borderline examples
+- avoid overreacting to buzzwords without real reasoning
 
----
-
-## Notes for the Project
-This project is not just about finding “good” topics. It is about detecting how well a post argues its point. That means the best examples are usually ones that are specific, grounded, and clear.
