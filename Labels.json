@@ -1,0 +1,650 @@
+[
+    {
+        "text": "AI companies keep saying they're 'agentic' but most workflows still fail the moment the user asks for anything slightly ambiguous.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The biggest moat in AI isn't the model. It's the data pipeline and the feedback loop that makes the product actually useful.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Most people benchmark models like they're buying a car. In practice, the real question is how often the output is good enough to trust.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "If your AI product only works on clean prompts, it isn't a product yet. It's a demo with a good onboarding screen.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The most underrated skill in tech right now is knowing when to stop using AI and start thinking for yourself.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Every startup says it is 'AI-native.' The ones that survive are the ones that still understand distribution.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "If you can make one small workflow 10% better for 10,000 people, that's more valuable than inventing a flashy new model.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "If you're paying for 12 AI subscriptions, you probably don't need more tools. You need one process that actually works.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The best AI copilots are not the ones that sound smart. They're the ones that reduce the number of stupid steps in your day.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Every company is suddenly a 'platform,' but most of them still can't keep a basic API stable for a week.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "A lot of people are obsessed with model size. I care more about latency, cost, and whether the system can recover from mistakes.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The future of software is not fewer developers. It's developers using better tools to solve harder problems faster.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "You don't need another AI trend report. You need one example of a workflow that saved a team real time this month.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "AI is not magic. It's just expensive pattern matching with a great UI.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The real bottleneck in most companies is not creativity. It's documentation, handoffs, and people not reading the same spec.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "If your startup pitch is just 'we use AI for everything,' you probably don't have a product strategy yet.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Open-source models are getting good fast, which means the market is shifting from 'who has the best model' to 'who has the best workflow.'",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Most AI demos are proof that a model can do one thing once. Real products are about repeatability, safety, and trust.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "I still think the most important AI skill is being clear about what you want and what you don't want.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "People act like AI is replacing thinking. In reality, it's making bad thinking way faster.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "You can make a lot of money with AI if you stop trying to build the next ChatGPT and start solving one boring problem well.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The strongest companies in AI will be the ones that can ship fast without turning their product into a support nightmare.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The hard part of AI is not writing the prompt. It's managing the edge cases that your users will hit first.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "If you don't understand your cost per successful task, you don't understand your product.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "This whole 'AI will replace all jobs' conversation misses the fact that most jobs are workflows, not individual tasks.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The most valuable AI apps are the ones that make a boring process feel like magic without needing a tutorial.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The future of coding is not 'AI writes everything.' It's 'humans review, refine, and own the outcome.'",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "If your AI product can't explain its own mistakes, it is not ready for serious users.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Most people think AI is about intelligence. It's actually about reducing friction between intent and execution.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "AI is so hyped that now even simple automation gets called revolutionary.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The best prompt is usually the one that tells the model what not to do.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "I don't want AI to think like a human. I want it to be reliable enough that I can trust it with actual work.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The model is only half the story. The real advantage is in evaluation, monitoring, and iteration.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "If your workflow needs 17 manual checks, AI is not the solution yet. It's just another layer of complexity.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Everybody wants to build the next AI unicorn. Almost nobody wants to build reliable infrastructure people will use every day.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Some of the best products in AI are just better search, better summaries, and better defaults.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The reason people distrust AI is not that it makes mistakes. It's that the mistakes often look confident.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "I am not impressed by AI that can write a paragraph. I am impressed by AI that helps a team ship faster without creating chaos.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The next wave of AI tools will be judged less by novelty and more by how much admin work they remove.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Anyone can build a chatbot. Very few people can build a product that workers actually want to use.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The companies that win with AI will be the ones that are boringly consistent about quality control.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "I used AI for one week and realized the biggest gain wasn't speed. It was reducing my need to context-switch.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Some people treat AI like a magic trick. The smart ones treat it like a tool that still needs supervision.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The easiest way to make AI look impressive is to hide the hard parts of the workflow behind a polished demo.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "AI isn't replacing the internet. It's making the internet easier to use badly.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The difference between a good AI product and a bad one is usually whether it saves time after the first five minutes.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "A lot of founders think AI means less need for product thinking. It usually means more need for product thinking.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "If you're still measuring AI success by raw output volume, you're probably optimizing the wrong thing.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The best AI use cases are the ones people were already doing manually and resenting.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Most 'AI will replace everything' takes are just nostalgia for a world where humans were the bottleneck.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The hard truth is that many AI products are really just wrappers around search, templates, and clever formatting.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The real innovation in AI is not another benchmark. It's making the system usable in messy real-world conditions.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "AI hype is the biggest distraction tech has ever pulled.Every demo looks like magic.Every real use case looks like a slightly better autocomplete.Nobody's calling it out because the stock price depends on the magic trick working.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Claude Fable 5 and GPT -5.6 may be dead…But there is a tool that generates UIs with a design system that's copyable as prompts.Everything is a prompt: font pairings, color system, spacing, icon sets, buttons and even webgl & threejs with full code samples.This made explorations with Gemini 3.1 Pro so precise and fun.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Claude Fable 5 is insane.i know literally NOTHING about coding. ZERO. and i just built 3 fully functioning web apps in 10 minutes.http: //localhost:3000/http: //localhost:5000/http: //localhost:8000/check it out.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "Bro I have so much respect for the developers who built the early internet.No frameworks. No stack overflow. No AI autocomplete. Just documentation, patience, and raw problem solving. They built the infrastructure that runs the entire modern world.The companies that profited most from that infrastructure scraped everything those developers ever wrote, fed it to a model, and are now using it to argue they don't need to hire developers anymore.The people who built the house are being told the house no longer needs builders.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "AI companies keep saying they're 'agentic' but most workflows still fail the moment the user asks for anything slightly ambiguous.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The biggest moat in AI isn't the model. It's the data pipeline and the feedback loop that makes the product actually useful.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Most people benchmark models like they're buying a car. In practice, the real question is how often the output is good enough to trust.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "If your AI product only works on clean prompts, it isn't a product yet. It's a demo with a good onboarding screen.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "A 29-year-old sales consultant from China quit his job thanks to AI: now he earns in just two weeks what his boss makes in an entire year.$306,000 in profit in the last month.He replaced an entire team of quantitative analysts with Claude and a swarm of AI agents, and built his own ETH price simulation engine.Each of the 6 agents validates its own trading decisions and, thanks to its precision, is generating at least $15,000 a day.The coverage and analysis speed of his agent system far surpasses that of any top-tier trading team.They collect data 24/7 and run simulations with that data in the MiroFish engine, completely autonomously.They memorize every pattern, every market reaction, and every trading signal. This marks a new milestone in algorithmic trading.Every trade is a perfect cycle. Every dollar earned is pure exploitation of market inefficiencies.It doesn't predict the future: the math already knows it. It simply interprets the numbers correctly and takes the money.Save this post if you really want to learn how to build something like it.You only need Claude + Device + 1 hour/day.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "I made $14,200 last month using Claude, a laptop, and 60 mins a day.No clients chasing. No team. No burnout.I documented every step in one guide. Was $129.Today → 100% FREE for 48 hours.Like + comment ‘Stack’ and I’ll DM the full playbook.Must follow me to get the DM.⚠️ Deleting this post in 48 hrs.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "NVIDIA CEO, Jensen Huang:  'Nobody writes prompts anymore. The new job is to write and handle loops'.This is the shift that's going to define the rest of 2026.53 minutes of pure insight from one of the richest men on earth.Watch it, then read the full guide on how to actually use loops below.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Many people think any given ML project is 99% training.In reality, its 50% evaluation,40% data cleaning,8% integration, and 2% training.The first two set the noise floor for learning. No ML magic matters; the model cannot lower the noise floor, as that’s the optimal bound of Shannon encoding of your data.Thus, not a single day goes by without me thinking about ontology. Even the old labels have to be constantly reviewed.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Raise your model the way you raise your kid.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Intelligence is to discover the true boundary of Shannon encoding, given the precondition of P(x), where P(x) is set by the initial prompt.A right prompt sets the condition of seamlessly boundless possibilities that distill chaos to order.Thus, a good model would first reframe the prompt to a proper question to unlock the effectiveness of its trajectories.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Elon Musk: 'We're in the final stages of completion of Optimus 3, which is really going to be by far the most advanced robot in the world, nothing's even close'. In fact, I havent even sent any demos of robots that are as good as Optimus 3, frankly.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "I built Polsia into a $250M company in under 3 months.Solo + AI. Zero employees.Everyone asks me how I did it.Introducing aisloP, a docu-series on how I build Polsia>Episode 1: The Launch.How I orchestrated the biggest Twitter launch of 2026.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "5 million humanoid robots working 24/7 can build Manhattan in ~6 months. now just imagine what the world looks like when we have 10 billion of them by 2045. now imagine the year 2100.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "My friend applied to 200 tech jobs in two years. No CS degree. No callbacks.Last month Anthropic offered him $750,000.All because of one Stanford lecture. Free on YouTube. One hour.A professor explains how ChatGPT actually works. Not the Twitter version. The real one.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "I'm convinced.Digital assets are the most profitable way to make $10,00/monthAll you need is Claude, internet connection and 1 hour a day.Ususally, I charge $199 for this, but for the next 48 hours, it's FREE.Comment “Claude” and I’ll send you a training breaking the entire system down for free.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "Claude can be very profitable if you know how to use it.Here's a complete FREE guide in Spanish with prompts, skills, and monetization.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The most underrated skill in tech right now is knowing when to stop using AI and start thinking for yourself.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Every startup says it is 'AI-native.' The ones that survive are the ones that still understand distribution.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "If you can make one small workflow 10% better for 10,000 people, that's more valuable than inventing a flashy new model.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "If you're paying for 12 AI subscriptions, you probably don't need more tools. You need one process that actually works.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The best AI copilots are not the ones that sound smart. They're the ones that reduce the number of stupid steps in your day.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Every company is suddenly a 'platform,' but most of them still can't keep a basic API stable for a week.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "A lot of people are obsessed with model size. I care more about latency, cost, and whether the system can recover from mistakes.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The future of software is not fewer developers. It's developers using better tools to solve harder problems faster.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "You don't need another AI trend report. You need one example of a workflow that saved a team real time this month.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "AI is not magic. It's just expensive pattern matching with a great UI.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The real bottleneck in most companies is not creativity. It's documentation, handoffs, and people not reading the same spec.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "If your startup pitch is just 'we use AI for everything,' you probably don't have a product strategy yet.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Open-source models are getting good fast, which means the market is shifting from 'who has the best model' to 'who has the best workflow.'",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Most AI demos are proof that a model can do one thing once. Real products are about repeatability, safety, and trust.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "I still think the most important AI skill is being clear about what you want and what you don't want.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "People act like AI is replacing thinking. In reality, it's making bad thinking way faster.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "You can make a lot of money with AI if you stop trying to build the next ChatGPT and start solving one boring problem well.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The strongest companies in AI will be the ones that can ship fast without turning their product into a support nightmare.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The hard part of AI is not writing the prompt. It's managing the edge cases that your users will hit first.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "9 YEAR OLD BUILT AN AI RADAR AND SOLD IT FOR $550KA student used Claude and $20 to build a real-time AI radar in one month. It detects speeding, records video, reads license plates, and automatically sends fines.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "I'm quitting my job to go full-in on Claude.Just Asked it to:Analyze mispriced Polymarket markets for arbitrage opportunities and find wallets using it to copy.Turned $2K into $12K overnight.Monitored 1000+ wallets.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "NVIDIA CEO JENSEN HUANG: THE AI APOCALYPSE NARRATIVE IS COMPLETE NONSENSE it's computer and software. we make it better every year because we know exactly how it worksthe real disruption is developers deploying local setups to out-produce entire teams:",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Claude just changed the game.All you need is: A laptop Internet connection 60 minutes a day That’s enough to build a $7200/month online income stream using AI.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "Netflix spends $200,000 to animate one 22-minute episode a 20-year-old spent $124 last month and made $12,345> Claude scripts the episode: 15 min> Midjourney renders the frames: 40 min> Runway animates the cuts: 50 min> ElevenLabs voices the cast: 20 min> Suno composes the score: 12 min> Make ships it overnight: 0 min",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Anthropic is going big on biology. In April they paid $400M for a biotech team. Now they hired the Nobel prize winner who built AlphaFold.In 2024, @DarioAmodeiwrote that AI could compress 100 years of biological progress into 10. He definitely meant it.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "An asian guy has discovered a method to learn anything ten times faster using AI!It just involves the Claude + Obsidian.Most people learn the slow way: read, forget, re-read, forget again.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "Genuinely impressed, almost shocked, at how good GLM-5.2 by @zai_orgis at coding. This changes things.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Andrej Karpathy: 'Suddenly everyone is a programmer, because everyone speaks English'. It used to take 5 to 10 years of study to do anything in software. That's just not the case anymore",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "While everyone's fighting for views on TikTok and YouTube..A quiet group is making $8,400/month turning text into audiobooks WITHOUT using their own voice.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "This trader used Claude to build a Quant Bot and made +$115,615 on PolymarketSince Apr 2, this wallet has been bringing in about $1,501 per day and running at a little over 22 trades per hour41,972 predictions with a 39% win rate in 80 days",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The hardest part of shipping AI products is usually not the model. It's turning a probabilistic system into something users can trust when it fails.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "I spent the weekend comparing Cursor, Copilot, and Claude Code on real repo tasks. The winner wasn't the one with the most features; it was the one that made small edits the least annoying.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "If you're not building with AI in 2026, you're basically asking to be replaced by someone who is.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "A lot of 'AI will replace software jobs' posts ignore the fact that enterprise software is mostly coordination, approvals, and edge cases. Those are the parts that still need judgment.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Local models are getting good enough that latency and privacy are starting to matter more than raw benchmark scores.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "I used one prompt and made a fully automated business in a day. Anyone can do this if they just stop overthinking it.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The supply chain for modern AI is not just chips. It's power, cooling, data centers, and the people who know how to operate them at scale.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The most useful AI workflow I've seen so far isn't 'ask the model to write code.' It's 'give it the codebase, ask it to explain tradeoffs, and then verify the result yourself.'",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The future is simple: every company will be an AI company and every employee will be an AI employee.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "Most model evaluation is still measuring benchmark performance, not whether the system actually helps a user complete a task faster with fewer mistakes.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "If you don't understand your cost per successful task, you don't understand your product.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "This whole 'AI will replace all jobs' conversation misses the fact that most jobs are workflows, not individual tasks.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The most valuable AI apps are the ones that make a boring process feel like magic without needing a tutorial.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The future of coding is not 'AI writes everything.' It's 'humans review, refine, and own the outcome.'",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "If your AI product can't explain its own mistakes, it is not ready for serious users.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Most people think AI is about intelligence. It's actually about reducing friction between intent and execution.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "AI is so hyped that now even simple automation gets called revolutionary.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The best prompt is usually the one that tells the model what not to do.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "I don't want AI to think like a human. I want it to be reliable enough that I can trust it with actual work.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The model is only half the story. The real advantage is in evaluation, monitoring, and iteration.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "If your workflow needs 17 manual checks, AI is not the solution yet. It's just another layer of complexity.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Everybody wants to build the next AI unicorn. Almost nobody wants to build reliable infrastructure people will use every day.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Some of the best products in AI are just better search, better summaries, and better defaults.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The reason people distrust AI is not that it makes mistakes. It's that the mistakes often look confident.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "I am not impressed by AI that can write a paragraph. I am impressed by AI that helps a team ship faster without creating chaos.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The next wave of AI tools will be judged less by novelty and more by how much admin work they remove.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Anyone can build a chatbot. Very few people can build a product that workers actually want to use.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The companies that win with AI will be the ones that are boringly consistent about quality control.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "I used AI for one week and realized the biggest gain wasn't speed. It was reducing my need to context-switch.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Some people treat AI like a magic trick. The smart ones treat it like a tool that still needs supervision.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The easiest way to make AI look impressive is to hide the hard parts of the workflow behind a polished demo.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "AI isn't replacing the internet. It's making the internet easier to use badly.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The difference between a good AI product and a bad one is usually whether it saves time after the first five minutes.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "A lot of founders think AI means less need for product thinking. It usually means more need for product thinking.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "If you're still measuring AI success by raw output volume, you're probably optimizing the wrong thing.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "The best AI use cases are the ones people were already doing manually and resenting.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Most 'AI will replace everything' takes are just nostalgia for a world where humans were the bottleneck.",
+        "label": "low_quality_take"
+    },
+    {
+        "text": "The hard truth is that many AI products are really just wrappers around search, templates, and clever formatting.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "The real innovation in AI is not another benchmark. It's making the system usable in messy real-world conditions.",
+        "label": "high_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #1: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #2: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #3: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #4: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #5: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #6: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #7: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #8: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #9: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #10: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #11: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #12: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #13: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #14: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #15: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #16: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #17: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #18: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #19: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #20: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    },
+    {
+        "text": "Tech Twitter thread #21: the best AI tools are the ones that reduce busywork without adding another layer of setup.",
+        "label": "medium_quality_take"
+    }
+]
